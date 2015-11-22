@@ -20,18 +20,25 @@ body {
 
 /* end utils */
 
+ul {
+    margin: 0;
+}
+
 a {
-    color: #999;
-    font-weight: bold;
+    color: #555;
     text-decoration: none;
 }
 
-a:hover[href] {
+a:hover:not(.active) {
     text-decoration: underline;
 }
 
+a.active {
+    background: #efefef;    
+}
+
 a:visited {
-    color: #ccc;
+    color: #777;
 }
 
 a.block {
@@ -71,6 +78,7 @@ a.block:hover {
     width: 200px;
 
     line-height: 2.5rem;
+    font-weight: bold;
 
     cursor: default;
 }
@@ -78,6 +86,16 @@ a.block:hover {
 .body .content {
 
 }
+
+.body .content .title {
+    font-weight: bold; 
+    margin: 2rem 0 1rem 0;
+}
+
+.body .content .title:first-child {
+    margin-top: 0;
+}
+
 
 
 .me {
