@@ -38,7 +38,7 @@ a.active {
 }
 
 a:visited {
-    color: #777;
+    /*color: #777;*/
 }
 
 a.block {
